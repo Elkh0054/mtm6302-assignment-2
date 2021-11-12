@@ -52,3 +52,5 @@ $gallery.addEventListener('mouseOut', function (event){
     let $targetItem1 = event.target.closest('img');
     $targetItem1.classList.remove('larger')
 })
+
+//end of script
