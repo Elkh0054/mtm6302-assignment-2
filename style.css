@@ -2,43 +2,54 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 15px;
 }
-#container{
-    width: 100%;
-    text-align: center;
-    background-color: rgb(214, 248, 237);
-    
-}
+
 header{
-    font-size: 20rem;
     text-align: center;
     display: flexbox;
     background-color: rgb(119, 195, 197);
     color: rgb(252, 21, 167);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#container{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(214, 248, 237);
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: auto;
+    grid-gap: 2em;
     
 }
+
 #gallery{
     
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    height: 100%;
     display:flex;
     flex-wrap: wrap;
     flex-direction:row;
     align-items: center;
+    grid-row: 1/2;
+    grid-column: 1/2;
   
-   
+}
+
+li {
+    list-style: none;
 }
 
 
-#gallery img {
-    display: flex;
-    width:70rem;
-    height:70rem;
+#gallery li img {
     padding: 4rem;
-    margin-top: 4rem;
-   
-   
+    max-width: 300px;
+    max-height: 300px;
 }
 
 

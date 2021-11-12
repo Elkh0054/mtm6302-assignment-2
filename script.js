@@ -1,8 +1,15 @@
-const puppies = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg']
+//adding images to the list items//
+
 const items = []
-const $container = document.getElementById('gallery')
-for (const puppy of puppies) {
-    items.push(`<header><span>&#${gallery}</span> <span>${gallery}</span></div>`)
+
+// adding the images//
+
+
+
+const $gallery = document.getElementById('gallery')
+for (let i = 1; i < 13; i++ ) {
+    items.push(`<li class='puppy'><img tabindex=${i} src = 'images/${i}.jpg'></li>`)
+
 }
 
-$container.innerHTML = items.join('')
+$gallery.innerHTML = items.join('')
