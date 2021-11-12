@@ -42,3 +42,13 @@ $gallery.addEventListener('click', function (event) {
 })
 
 
+$gallery.addEventListener('mousOver', function (event) { 
+    let $targetItem1 = event.target.closest('img');
+    $targetItem1.classList.add('larger')
+
+})
+
+$gallery.addEventListener('mouseOut', function (event){
+    let $targetItem1 = event.target.closest('img');
+    $targetItem1.classList.remove('larger')
+})
