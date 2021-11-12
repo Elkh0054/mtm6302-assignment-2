@@ -42,10 +42,20 @@ $gallery.addEventListener('click', function (event) {
 })
 
 
-const button = document.getElementById('gallery')
+const $gallery = document.getElementById('img')
+const images = document.querySelectorAll('images')
 
-gallery.addEventListener('mouseover', function() {
-  button.textContent = `Don't you do it!`
-})
+function animateBox (e) {
 
+    const gallery = e.target
+    $gallery.className = `
+    images
+    animated
+    infinite
+    ${$gallery.dataset.animation}`
+    images.textContent = images.dataset.animation 
+}
 
+for (const image of images) {
+    button.addEventListener ('click', animateImages)
+}
