@@ -41,13 +41,11 @@ $gallery.addEventListener('click', function (event) {
     }
 })
 
-$gallery.addEventListener('mouseover', function (event) {
-let $targetItem = event.target.closest('img');
-$targetItem.classList.add('larger')
 
+const button = document.getElementById('gallery')
+
+gallery.addEventListener('mouseover', function() {
+  button.textContent = `Don't you do it!`
 })
 
-$gallery.addEventListener('mouseout', function (event){
-    let $targetItem1 =event.target.closest('img');
-    $targetItem1.classList.remove('larger')
-})
+
